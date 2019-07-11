@@ -1,4 +1,4 @@
-R scripts can be rendered\!
+Rendering R Scripts is Easy
 ================
 ehlrlichd
 July 7, 2019
@@ -12,10 +12,16 @@ Rendering Rscript through Markdown: A Test
 #####R text
 ```
 
-And here are some data \!\!\!
+**And here is some bold text**
+
+*Alternatively, italics* Below here are some data
+
+  - table
+
+<!-- end list -->
 
 ``` r
-matrix(c(1:10,10:1), ncol = 2, dimnames = list(1:10, c("X","Y")))
+print(matrix(c(1:10,10:1), ncol = 2, dimnames = list(1:10, c("X","Y"))), echo = FALSE)
 ```
 
     ##     X  Y
@@ -34,6 +40,6 @@ matrix(c(1:10,10:1), ncol = 2, dimnames = list(1:10, c("X","Y")))
 plot(1:10, 10:1, pch = 21, bg = rainbow(10, s = .8), cex = 3)
 ```
 
-![](test-script_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](test-script_files/figure-gfm/Plot-1.png)<!-- -->
 
 Neato\!\! Right???
